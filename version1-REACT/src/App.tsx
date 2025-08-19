@@ -1,10 +1,11 @@
+import Message from './Message';
 
 function App() {
 
   return (
-    <>
-    Hello, World!
-    </>
+    <div>
+    <Message />
+    </div>
   )
 }
 
