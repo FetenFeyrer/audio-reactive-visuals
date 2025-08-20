@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');     /* default */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap'); /* editorial */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap'); /* terminal */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');    /* retro */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');         /* brutalist */
+
+/* glass */
+.theme-glass {
+  --bg-color: #0b0e1a;
+  --text-color: #e9eefb;
+  --accent-color: #78a6ff;
+  --nav-bg: rgba(255,255,255,0.06);
+  --font-family: 'Inter', system-ui, sans-serif;
+}
+.theme-glass .cardish {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: linear-gradient(145deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 14px;
+}
+
+/* brutalist */
+.theme-brutal {
+  --bg-color: #ffffff;
+  --text-color: #111;
+  --accent-color: #ff1744;
+  --nav-bg: #fff;
+  --font-family: 'Archivo Black', Impact, sans-serif;
+}
+.theme-brutal * { border-radius: 0 !important; }
+.theme-brutal .navbar, .theme-brutal .card, .theme-brutal .btn {
+  border: 2px solid #111 !important;
+}
+
+/* editorial serif */
+.theme-editorial {
+  --bg-color: #f7f7f3;
+  --text-color: #1e1e1a;
+  --accent-color: #2a5bd7;
+  --nav-bg: #ffffff;
+  --font-family: 'Merriweather', Georgia, serif;
+}
+.theme-editorial h1, .theme-editorial h2, .theme-editorial h3 {
+  font-family: "Merriweather", Georgia, serif;
+  letter-spacing: .2px;
+}
+
+/* terminal */
+.theme-terminal {
+  --bg-color: #0b0f0c;
+  --text-color: #c5ffbf;
+  --accent-color: #4cff4c;
+  --nav-bg: #0b0f0c;
+  --font-family: 'IBM Plex Mono', monospace;
+}
+.theme-terminal a { text-decoration: underline dotted; }
+.theme-terminal .btn { border: 1px dashed var(--accent-color); }
+
+/* retro cream */
+.theme-retro {
+  --bg-color: #f7f1e8;
+  --text-color: #2b2b2b;
+  --accent-color: #ff6f61;
+  --nav-bg: #ffffff;
+  --font-family: 'Rubik', 'Inter', sans-serif;
+}
+
+/* baseline variables */
+:root {
+  --bg-color: #0f111a;
+  --text-color: #f8f8f8;
+  --accent-color: #9fef00;
+  --nav-bg: #1b1d29;
+  --font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* optional light baseline */
+.light-mode {
+  --bg-color: #f9f3e7;
+  --text-color: #333333;
+  --accent-color: #ff6f61;
+  --nav-bg: #ffffff;
+  --font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* apply the variables */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  transition: background-color .3s ease, color .3s ease;
+}
+a { color: var(--accent-color); }
